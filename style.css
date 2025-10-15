@@ -1,0 +1,226 @@
+/* ==================================================== */
+/* Paleta de Cores e Tipografia Sugerida */
+/* ==================================================== */
+/* Destaque: #ff4ca2 (Rosa Pink) */
+/* Principal: #343a40 (Cinza Escuro/Preto) */
+/* Fundo: #f8f9fa (Cinza Claro) */
+/* Fonte: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+/* Fonte de Destaque: 'Georgia', serif; */
+
+/* ==================================================== */
+/* ESTILOS GERAIS */
+/* ==================================================== */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Fonte moderna e legível */
+    line-height: 1.6;
+    color: #343a40; /* Cor de texto principal */
+    background-color: #f8f9fa; /* Fundo suave */
+}
+
+h1, h2, h3, h4, h5 {
+    color: #343a40;
+    font-weight: 700;
+}
+
+/* Título de Seção Principal */
+.container h2.text-center {
+    font-family: 'Georgia', serif; /* Fonte serifada para elegância */
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    margin-bottom: 1.5rem !important;
+}
+
+/* ==================================================== */
+/* NAVEGAÇÃO (NAVBAR) */
+/* ==================================================== */
+.navbar {
+    border-bottom: 1px solid #e9ecef; /* Linha sutil para destacar a navbar */
+    box-shadow: 0 2px 4px rgba(0,0,0,.05); /* Sombra suave */
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #343a40 !important;
+    letter-spacing: 1px; /* Espaçamento para visual premium */
+}
+
+/* Estilo do slogan na navbar */
+.navbar-slogan {
+    max-height: 30px; 
+    margin-left: 10px;
+    /* Adicione um filtro se a imagem for muito colorida e quiser harmonizar: */
+    /* filter: grayscale(100%); */
+}
+
+/* Links de navegação */
+.nav-link {
+    color: #343a40 !important;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-item .active .nav-link, .nav-link.active {
+    color: #ff4ca2 !important; /* Destaque Rosa */
+    font-weight: 600;
+}
+
+
+/* ==================================================== */
+/* HEADERS E BANNERS */
+/* ==================================================== */
+
+/* Header Principal (Aplicação em bg-primary, bg-info, bg-secondary) */
+.bg-primary, .bg-info, .bg-secondary {
+    background-color: #343a40 !important; /* Fundo escuro e sofisticado */
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+.bg-primary h1, .bg-info h1, .bg-secondary h1 {
+    font-family: 'Georgia', serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* Banner Secundário (Capturando a Beleza da Moda) */
+.banner {
+    /* **ATENÇÃO:** Mude o caminho abaixo para sua imagem! */
+    background-image: url('../img/fundo_banner_exemplo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 80px 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fallback e overlay escuro */
+    /* Para escurecer a imagem e melhorar o contraste do texto: */
+    background-blend-mode: multiply; 
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+
+/* ==================================================== */
+/* BOTÕES */
+/* ==================================================== */
+
+/* Botão de Destaque Padrão Bootstrap */
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background-color: #ff4ca2 !important; /* Rosa Destaque */
+    border-color: #ff4ca2 !important;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Botão Personalizado (Usado no banner secundário e voltar) */
+.btn-custom {
+    background-color: #343a40;
+    color: #fff;
+    border: 1px solid #343a40;
+    padding: 10px 30px;
+    border-radius: 0; /* Estilo quadrado, moderno */
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #ff4ca2;
+    border-color: #ff4ca2;
+    color: #fff;
+}
+
+
+/* ==================================================== */
+/* CARROSSEL */
+/* ==================================================== */
+.carousel-item img {
+    max-height: 70vh; /* Altura máxima para as imagens do carrossel */
+    width: 100%; /* Garante que preencha a largura disponível */
+    object-fit: cover;
+}
+
+/* Ajuste nos controles do carrossel para mais visibilidade */
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Menor área de clique */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    padding: 20px;
+}
+
+
+/* ==================================================== */
+/* SEÇÃO "SOBRE" (COMPLEMENTO) */
+/* ==================================================== */
+
+/* Estilo para títulos com a cor de destaque na página "Sobre" */
+.container h2[style*="#ff4ca2"] b {
+    color: #ff4ca2; /* Garante a cor rosa no texto */
+    font-weight: 700;
+}
+
+/* Estilo para a seção de serviços/cartões */
+.card {
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px; /* Altura fixa para as imagens dos serviços */
+    object-fit: cover;
+}
+
+
+/* ==================================================== */
+/* GALERIA/PORTFÓLIO */
+/* ==================================================== */
+.portfolio-img {
+    height: 350px; /* Altura fixa para as imagens do portfólio */
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.portfolio-img:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+
+/* ==================================================== */
+/* RODAPÉ (FOOTER) */
+/* ==================================================== */
+.bg-dark {
+    background-color: #343a40 !important; /* Cor escura sofisticada */
+}
+
+.footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ff4ca2 !important; /* Destaque Rosa no hover dos links sociais */
+}
+```
+
